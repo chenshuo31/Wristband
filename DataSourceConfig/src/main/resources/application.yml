@@ -1,0 +1,21 @@
+#thymelea模板配置
+spring:
+  application:
+    name: wristband-datasource
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML5
+    encoding: utf-8
+    servlet:
+      content-type: text/html
+  resources:
+    chain:
+      strategy:
+        content:
+          enabled: true
+
+logging:
+  file:
+    name: ./log/${spring.application.name}.log
